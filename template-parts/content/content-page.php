@@ -31,8 +31,37 @@
                 echo  get_field('custom_h1', $pageid)  ;
             endif;
             the_content();
+            ?>
+<div class="banner banner-bottom">
+    <span class="banner-title">IMMIGRATION & PERSONAL INJURY ATTORNEYS AT LAW</span>
+    <?php if (has_post_thumbnail( $post->ID ) ):
+                echo the_post_thumbnail(array(1060,209));
+            else:
+                ?>
+    <img src="<?= IMGURL ?>internal-banner.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+    <?php
+            endif; ?>
+</div>
+<?php
+            if (get_field('page_bottom', $pageid)) { ?>
+<section class="page-bottom">
+    <div class="row">
+        <div class="col-xs-12">
+            <?php echo get_field('page_bottom', $pageid); ?>
+        </div>
+    </div>
+</section>
+<?php  }
+            ?>
+<div class="content">
+    <?php
+            if (get_field('page_two', $pageid)) { ?>
+    <?php echo get_field('page_two', $pageid); ?>
+    <?php  }
+            echo "</div>";
             echo "</div>";
             echo "</div>";
             echo "</article>\n";
 		}
+		
     }

@@ -30,9 +30,10 @@
 
 
     .navbar-right {
-        margin-bottom: 1em;
+//         margin-bottom: 1em;
         font-weight: 500;
         text-align: right;
+        
     }
 
     @include media-breakpoint-down(md) {
@@ -47,7 +48,7 @@
             margin-bottom: 0;
             flex-wrap: wrap;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
         }
 
         a {
@@ -57,6 +58,12 @@
     }
 }
 
+.internal .top-header {
+    @include media-breakpoint-up(lg) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 .internal .navbar-right {
     margin-bottom: 0;
@@ -91,11 +98,11 @@
     }
 }
 
-body.internal {
-    @include media-breakpoint-up(lg) {
-        .top-header {
-            background: $white;
-            color: $black; 
-        }
-    }
-}
+// body.internal {
+//     @include media-breakpoint-up(lg) {
+//         .top-header {
+//             background: $white;
+//             color: $black; 
+//         }
+//     }
+// }

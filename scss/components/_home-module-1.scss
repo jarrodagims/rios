@@ -14,7 +14,8 @@
       padding: .5em 0;
     }
   }
-  
+
+
 
   .jumbotron {
     width: 100%;
@@ -89,6 +90,15 @@
     }
   }
 
+  .list-inline li a:hover {
+    color: $white;
+  } 
+
+  .top-header a:hover {
+    color: $white;
+  }
+  
+
   @include media-breakpoint-down(sm) {
     background: url("../img/bg-hero-sm.jpg") center 50% no-repeat;
     background-size: cover;
@@ -120,6 +130,8 @@
     .list-inline {
       flex-wrap: wrap;
       width: 100%;
+      font-size: 11px;
+      justify-content: flex-start;
     }
 
     .navbar-brand {

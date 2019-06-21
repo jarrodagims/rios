@@ -39,20 +39,7 @@
 
 
     <div class="sidebar-container">
-        <div class="d-flex d-lg-none top-header">
-            <div class="container-fluid">
-                <div class="v-align row">
-                    <div class="col navbar-button text-center">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>ESPAÑOL</li>
-                            <li><a
-                                    href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">TEL:
-                                    <?php printPhone();?></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 
         <div class="content">

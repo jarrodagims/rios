@@ -4,11 +4,10 @@
 Template Name: Home
  */?>
 
-<section class="home-module-1 ">
+<section data-target="#button1" id="home-module-1" class="home-module-1 waypoint">
     <div class=" nav-sidebar">
         <div class="brand-header d-lg-none">
-            <a data-target="#button1" class="waypoint navbar-brand" href='<?php echo get_site_url(); ?>'><img
-                    src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+            <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
             'description'
         ); ?>" /></a>
         </div>
@@ -25,8 +24,8 @@ Template Name: Home
 
                     <div>
 
-                        <a data-target="#button1" id="home-module-1" class="waypoint navbar-brand"
-                            href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg"
+                                alt="<?php echo get_bloginfo(
     'description'
 ); ?>" /></a>
 
@@ -127,38 +126,48 @@ Template Name: Home
                                 </div>
 
                                 <div class="column-top">
-                                    <p>Personal Injury</p>
+                                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne" href="#" class="d-xl-none d-block">
+                                        <p>Personal Injury</p>
+                                    </a>
+
+                                    <p class="d-xl-block d-none">Personal Injury</p>
                                 </div>
                             </div>
+                            <div id="collapseOne" class="collapse">
+                                <div class="extra-padding">
+                                    <p><strong><em>Personal injury is a broad category of legal cases that pertain to
+                                                injury
+                                                to the body resulting from negligence, car crashes, or other types of
+                                                accidents.</em></strong></p>
 
-                            <div class="extra-padding">
-                                <p><strong><em>Personal injury is a broad category of legal cases that pertain to injury
-                                            to the body resulting from negligence, car crashes, or other types of
-                                            accidents.</em></strong></p>
-
-                                <p>These type of cases involve victims who suffered an injury as a result of someone
-                                    else’s negligent behavior, business practices, or unsafe facility. A personal injury
-                                    can have a significant impact on people’s lives, cost thousands in medical expenses,
-                                    and alter a person’s ability to work. These are difficult cases that affect people’s
-                                    quality of life, financial standing, and beyond.
-                                </p>
-                            </div>
-
-                            <div class="align-bottom">
-                                <div class="bottom">
-                                    <p>Some of the most common include:</p>
+                                    <p>These type of cases involve victims who suffered an injury as a result of someone
+                                        else’s negligent behavior, business practices, or unsafe facility. A personal
+                                        injury
+                                        can have a significant impact on people’s lives, cost thousands in medical
+                                        expenses,
+                                        and alter a person’s ability to work. These are difficult cases that affect
+                                        people’s
+                                        quality of life, financial standing, and beyond.
+                                    </p>
                                 </div>
 
-                                <div class="bottom-end extra-padding">
-                                    <ul>
-                                        <li>Car accidents</li>
-                                        <li>Motorcycle accidents</li>
-                                        <li>Dog bites</li>
-                                        <li>Slip & fall accidents</li>
-                                        <li>Wrongful death</li>
-                                        <li>Trucking accidents</li>
-                                        <li>Pedestrian accidents</li>
-                                    </ul>
+                                <div class="align-bottom">
+                                    <div class="bottom">
+                                        <p>Some of the most common include:</p>
+                                    </div>
+
+                                    <div class="bottom-end extra-padding">
+                                        <ul>
+                                            <li>Car accidents</li>
+                                            <li>Motorcycle accidents</li>
+                                            <li>Dog bites</li>
+                                            <li>Slip & fall accidents</li>
+                                            <li>Wrongful death</li>
+                                            <li>Trucking accidents</li>
+                                            <li>Pedestrian accidents</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -170,43 +179,54 @@ Template Name: Home
                                 </div>
 
                                 <div class="column-top">
-                                    <p>Immigration</p>
+                                    <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo" href="#" class="d-xl-none d-block">
+                                        <p>Immigration</p>
+                                    </a>
+                                    <p class="d-xl-block d-none">Immigration</p>
                                 </div>
                             </div>
 
-                            <div class="extra-padding">
-                                <p>
-                                    <strong><em>The United States of America is the land of opportunity, innovation, and
-                                            greatness.</em></strong>
-                                </p>
+                            <div id="collapseTwo" class="collapse">
+                                <div class="extra-padding">
+                                    <p>
+                                        <strong><em>The United States of America is the land of opportunity, innovation,
+                                                and
+                                                greatness.</em></strong>
+                                    </p>
 
-                                <p>
-                                    It is a land that welcomes people of all backgrounds and religions, and it is why
-                                    thousands of people are fighting to call the U.S. their home.
-                                </p>
+                                    <p>
+                                        It is a land that welcomes people of all backgrounds and religions, and it is
+                                        why
+                                        thousands of people are fighting to call the U.S. their home.
+                                    </p>
 
-                                <p>
-                                    Immigration law is important to us, especially as a homegrown city of immigrants.
-                                    The immigration system is overwhelming and downright impossible to tackle on your
-                                    own. That’s why we take our role in your life seriously. We work to help you resolve
-                                    your case, whether you have been detained or are looking to change your legal
-                                    status.
-                                </p>
-                            </div>
-                            <div class="align-bottom">
-                                <div class="bottom">
-                                    <p>Below are some of the services we offer:</p>
+                                    <p>
+                                        Immigration law is important to us, especially as a homegrown city of
+                                        immigrants.
+                                        The immigration system is overwhelming and downright impossible to tackle on
+                                        your
+                                        own. That’s why we take our role in your life seriously. We work to help you
+                                        resolve
+                                        your case, whether you have been detained or are looking to change your legal
+                                        status.
+                                    </p>
                                 </div>
+                                <div class="align-bottom">
+                                    <div class="bottom">
+                                        <p>Below are some of the services we offer:</p>
+                                    </div>
 
-                                <div class="bottom-end  extra-padding">
-                                    <ul>
-                                        <li>Deportation defense</li>
-                                        <li>Motions for bonds & bond processing</li>
-                                        <li>Adjustment of status (green cards or visas)</li>
-                                        <li>DACA renewals</li>
-                                        <li>Citizenship applications</li>
-                                    </ul>
+                                    <div class="bottom-end  extra-padding">
+                                        <ul>
+                                            <li>Deportation defense</li>
+                                            <li>Motions for bonds & bond processing</li>
+                                            <li>Adjustment of status (green cards or visas)</li>
+                                            <li>DACA renewals</li>
+                                            <li>Citizenship applications</li>
+                                        </ul>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -218,38 +238,46 @@ Template Name: Home
                                 </div>
 
                                 <div class="column-top">
-                                    <p>Family Law</p>
+                                    <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree" href="#" class="d-block d-xl-none">
+                                        <p>Family Law</p>
+                                    </a>
+                                    <p class="d-xl-block d-none">Family Law</p>
                                 </div>
                             </div>
+                            <div id="collapseThree" class="collapse">
+                                <div class="extra-padding">
+                                    <p>
+                                        <strong><em>Family life is everything. But we know that the dynamic of a family
+                                                is
+                                                often complicated, resulting in difficult moments.</em></strong>
+                                    </p>
 
-                            <div class="extra-padding">
-                                <p>
-                                    <strong><em>Family life is everything. But we know that the dynamic of a family is
-                                            often complicated, resulting in difficult moments.</em></strong>
-                                </p>
-
-                                <p>
-                                    When matters become serious, legal assistance is necessary. Our law firm is here to
-                                    help you settle disputes that are otherwise painful, complicated, and wrought with
-                                    legal implications. We are committed to ensuring our clients have adequate and
-                                    expert legal counsel when it comes to dealing with family issues.
-                                </p>
-                            </div>
-
-                            <div class="align-bottom">
-                                <div class="bottom">
-                                    <p>Some of the family law cases we work include:</p>
+                                    <p>
+                                        When matters become serious, legal assistance is necessary. Our law firm is here
+                                        to
+                                        help you settle disputes that are otherwise painful, complicated, and wrought
+                                        with
+                                        legal implications. We are committed to ensuring our clients have adequate and
+                                        expert legal counsel when it comes to dealing with family issues.
+                                    </p>
                                 </div>
 
-                                <div class="bottom-end extra-padding">
-                                    <ul>
-                                        <li>Divorce</li>
-                                        <li>Child custody</li>
-                                        <li>Child support</li>
-                                        <li>Modifications</li>
-                                        <li>Enforcement</li>
-                                        <li>Protective orders</li>
-                                    </ul>
+                                <div class="align-bottom">
+                                    <div class="bottom">
+                                        <p>Some of the family law cases we work include:</p>
+                                    </div>
+
+                                    <div class="bottom-end extra-padding">
+                                        <ul>
+                                            <li>Divorce</li>
+                                            <li>Child custody</li>
+                                            <li>Child support</li>
+                                            <li>Modifications</li>
+                                            <li>Enforcement</li>
+                                            <li>Protective orders</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

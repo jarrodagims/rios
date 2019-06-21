@@ -160,6 +160,11 @@
   padding-left: 30px;
   padding-right: 30px;
 
+  @include media-breakpoint-up(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @include media-breakpoint-down(md) {
     padding-left: 15px;
     padding-right: 15px;
@@ -186,12 +191,17 @@ the right sidebar including social icons address and phone
 
   a {
     color: $white;
+
+    &:hover {
+      color: $white;
+    }
   }
 
   ul.social-media {
     display: flex;
     margin-bottom: 0;
     margin-right: 1em;
+    font-size: 
 
     li a {
       padding: 0 0.5em;
@@ -215,7 +225,7 @@ the right sidebar including social icons address and phone
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     display: flex;
     margin-left: 0;
     justify-content: space-between;
@@ -379,13 +389,24 @@ the right sidebar including social icons address and phone
   height: 13px;
 }
 
-@include media-breakpoint-up(md) {
+.page-template-page-home {
+  @include media-breakpoint-up(xl) {
   .dropdown:hover > .dropdown-menu {
     display: block;
     margin-top: 0px;
     background: rgba(0, 0, 0, 0.95);
     top: auto;
     bottom: 100px;
+  }
+}
+
+}
+
+@include media-breakpoint-up(xl) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    background: rgba(0, 0, 0, 0.95);
   }
 
   .dropdown-menu {
@@ -436,7 +457,6 @@ the right sidebar including social icons address and phone
     display: flex;
     margin-bottom: 0;
     justify-content: center;
-    margin-top: 1em;
 
     a {
       color: #cbcbcb;
@@ -448,6 +468,13 @@ the right sidebar including social icons address and phone
       &:first-child {
         margin-left: 0;
       }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .social-media { 
+        font-size: 11px;
+        margin-top: 0;
     }
   }
 }

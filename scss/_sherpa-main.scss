@@ -403,23 +403,21 @@ body {
           padding: 0 0;
           text-align: center;
           margin: 0 auto;
-          background-size: cover;
-          background: url("../img/bg-mid-banner.jpg") 0 0 no-repeat;
 
           @include media-breakpoint-down(md) {
             margin-top: 2em;
           }
 
           @include media-breakpoint-up(md) {
-            height: 305px;
-            margin-top: 6em;
+            height: auto;
+            margin-top: 3em;
           }
 
           .banner-title {
             z-index: 1;
             position: absolute;
-            font-size: 21px;
-            @include raleway();
+            font-size: 23px;
+            @include serif();
             width: 100%;
             height: 100%;
             justify-content: center;
@@ -429,6 +427,7 @@ body {
             display: flex;
             flex-direction: column;
             color: #fff;
+            
 
             .title {
               font-family: "Poppins", sans-serif;

@@ -7,28 +7,18 @@
 
       var inview = new Waypoint.Inview({
         element: self,
-        enter: function(direction) {
+        enter: function() {
           $(self.attr("data-target")).addClass("active");
-          //alert("Enter triggered with direction " + direction);
         },
-        entered: function(direction) {
-          //alert("Entered triggered with direction " + direction);
-        },
-        exit: function(direction) {},
-        exited: function(direction) {
+        entered: function() {},
+        exit: function() {},
+        exited: function() {
           $(self.attr("data-target")).removeClass("active");
-          //alert("Exited triggered with direction " + direction);
         }
       });
-      // var self = $(this);
 
       $(this).waypoint({
-        handler: function() {
-          // self.addClass("active");
-          // $(self.attr("data-target")).addClass("active");
-          //disable after activating once
-          //this.destroy();
-        },
+        handler: function() {},
         offset: 0
       });
     });
